@@ -1,4 +1,4 @@
-package com.javatechie.dto;
+package com.example.graphql.client.dto;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.AllArgsConstructor;

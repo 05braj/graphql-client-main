@@ -1,8 +1,8 @@
-package com.javatechie.service;
+package com.example.graphql.client.service;
 
-import com.javatechie.client.InventoryClient;
-import com.javatechie.dto.Item;
-import com.javatechie.dto.ItemRequestDTO;
+import com.example.graphql.client.client.InventoryClient;
+import com.example.graphql.client.dto.Item;
+import com.example.graphql.client.dto.ItemRequestDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

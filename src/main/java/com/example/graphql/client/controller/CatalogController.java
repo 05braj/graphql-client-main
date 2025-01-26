@@ -1,8 +1,8 @@
-package com.javatechie.controller;
+package com.example.graphql.client.controller;
 
-import com.javatechie.dto.Item;
-import com.javatechie.dto.ItemRequestDTO;
-import com.javatechie.service.CatalogService;
+import com.example.graphql.client.dto.Item;
+import com.example.graphql.client.dto.ItemRequestDTO;
+import com.example.graphql.client.service.CatalogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

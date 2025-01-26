@@ -1,4 +1,4 @@
-package com.javatechie.dto;
+package com.example.graphql.client.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

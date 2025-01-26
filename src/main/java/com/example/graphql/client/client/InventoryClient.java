@@ -1,11 +1,10 @@
-package com.javatechie.client;
+package com.example.graphql.client.client;
 
-import com.javatechie.dto.Item;
-import com.javatechie.dto.ItemRequestDTO;
+import com.example.graphql.client.dto.Item;
+import com.example.graphql.client.dto.ItemRequestDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.graphql.client.HttpGraphQlClient;
 import org.springframework.stereotype.Component;
-import reactor.core.publisher.Mono;
 
 import java.util.List;
 
