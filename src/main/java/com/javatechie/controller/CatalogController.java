@@ -29,4 +29,14 @@ public class CatalogController {
     public Item receiveNewShipment(@RequestBody ItemRequestDTO itemRequest) {
         return catalogService.receiveNewShipment(itemRequest);
     }
+
+    @PostMapping("/createStock")
+    public Item createStock(@RequestBody ItemRequestDTO itemRequest) {
+        return catalogService.createStock(itemRequest);
+    }
+
+    @DeleteMapping("/deleteStock")
+    public String deleteStock(@RequestParam int id) {
+        return catalogService.deleteStock(id);
+    }
 }

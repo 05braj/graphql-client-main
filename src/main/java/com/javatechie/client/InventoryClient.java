@@ -58,4 +58,28 @@ public class InventoryClient {
                 .retrieve("receiveNewShipment")
                 .toEntity(Item.class).block();
     }
+
+    public Item createNewStock(ItemRequestDTO itemRequest) {
+        String graphQlQuery = String.format("mutation CreateStock {\n" +
+                "    createStock(name: %s, category: %s, price: %f, stock: %d) {\n" +
+                "        id\n" +
+                "        name\n" +
+                "        category\n" +
+                "        price\n" +
+                "        stock\n" +
+                "    }\n" +
+                "}", itemRequest.getName(), itemRequest.getCategory(), itemRequest.getPrice(), itemRequest.getStock());
+        return graphQlClient.document(graphQlQuery)
+                .retrieve("createStock")
+                .toEntity(Item.class).block();
+    }
+
+    public String deleteStock(int id) {
+        String graphQlQuery = String.format("mutation DeleteStock {\n" +
+                "    deleteStock(id: %d)\n" +
+                "}", id);
+        return graphQlClient.document(graphQlQuery)
+                .retrieve("deleteStock")
+                .toEntity(String.class).block();
+    }
 }

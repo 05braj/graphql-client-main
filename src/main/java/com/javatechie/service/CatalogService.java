@@ -25,4 +25,12 @@ public class CatalogService {
     public Item receiveNewShipment(ItemRequestDTO itemRequest) {
         return inventoryClient.receiveNewShipment(itemRequest);
     }
+
+    public Item createStock(ItemRequestDTO itemRequest) {
+        return inventoryClient.createNewStock(itemRequest);
+    }
+
+    public String deleteStock(int id) {
+        return inventoryClient.deleteStock(id);
+    }
 }

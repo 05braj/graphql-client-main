@@ -11,4 +11,8 @@ public class ItemRequestDTO {
 
     private int id;
     private int qty;
+    private String name;
+    private String category;
+    private Float price;
+    private Integer stock;
 }
